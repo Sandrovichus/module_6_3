@@ -3,7 +3,8 @@ class Horse:
     sound = 'Frrr'
 
     def voice(self):
-        print(super().sound)
+        if isinstance(self, Pegasus):
+            print(super().sound)
 
     def run(self, dx):
         self.x_distance += dx
